@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>OutOfOffice Live</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+<body>
+  <div class="part1">
+    <h1 class="header">OutOfOffice Live</h1>
+  </div>
+
+
+  <div class="part2">
+    <div class="youtube-embed">
+      <iframe width="1000" height="562.5" src="https://www.youtube.com/embed/live_stream?channel=UC02ngzJV4rJzXwFvdzilRTA&autoplay=1" frameborder="0" gesture="media" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <hr>
+  </div>
+
+  <div class="part3">
+    <div class="chat__main">
+      <ol id="messages" class="chat__messages"></ol>
+      <div class="chat__footer">
+        <form id="message-form">
+          <input name="message" type="text" placeholder="type here" autofocus autocomplete="off" />
+          <button>Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<script id="message-template" type="text/template">
+  <li class="message">
+    <div class="message__title">
+      <h4>{{from}}</h4>
+    </div>
+    <div class="message__body">
+      <p>{{text}}</p>
+    </div>
+  </li>
+</script>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/libs/jquery-3.3.1.min.js"></script>
+<script src="/js/libs/mustache.js"></script>
+<script src="/js/live.js"></script>
+
+</body>
+</html>
