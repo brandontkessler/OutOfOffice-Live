@@ -7,113 +7,90 @@ body {
 	font-family: 'Lato', serif;
 }
 
-
 .header {
 background-color:#00c1d7;
 color:white;
 text-align:center;
-padding-top:5px;
-padding-bottom:5px;
 }
 
-.youtube-embed-2 {
+.youtube-embed {
 background-color:#fefefe;
 }
 
 iframe {
-	margin-top:50px;
+	margin-top:5px;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 350px;
 	height:196.875px;
+	margin-bottom:5px;
 }
 
-
-
-/* FOOTER */
-.footer-container {
-	display:grid;
-	grid-template-columns: repeat (3, 1fr);
-	grid-gap:10px;
+button {
+	border: none;
+	background:  #00c1d7;
+	color: white;
+	padding: 5px;
 }
 
-.footer1 {
-	grid-column: 1 / 2;
+button:hover {
+	cursor:pointer;
 }
 
-.logo {
-	width: 250px;
-	height: 45px;
-	position:relative;
-	left:50%;
-	transform: translateX(-50%);
-	margin-bottom:20px;
+.chat__main {
+	display: flex;
+	flex-direction: column;
+	height: 47vh;
+	width: 100%;
 }
 
-.download-footer {
-	position:relative;
-	left:50%;
-	transform: translateX(-50%);
+.chat__messages {
+	color: #00c1d7;
+	flex-grow: 1;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
-.footer2 {
-	grid-column: 2 / 3;
+.chat__footer {
+	background: #e6e6e6;
+	display: flex;
+	padding: 10px;
+	flex-shrink: 0;
 }
 
-footer i {
-	padding:5px;
-	color:#bfbfbf;
+.chat__footer form {
+	flex-grow: 1;
+	display: flex;
 }
 
-footer i:hover {
-	color:#00c1d7;
+.chat__footer form * {
+	margin-right: 10px;
 }
 
-ul li {
-	list-style:none;
-	text-align:center;
-	font-size:1.2em;
-	padding:5px;
+.chat__footer input {
+	border: none;
+	padding:10px;
+	flex-grow: 1;
 }
 
-ul li a {
-	text-decoration:none;
-	color:#00c1d7;
+.chat__messages {
+	list-style-type: none;
+	padding: 10px;
 }
 
-ul li a:hover {
-	text-decoration:underline;
+.message {
+	padding: 10px;
 }
 
-.footer3 {
-	grid-column: 3 / 4;
+.part1 {
+	height: 10vh;
 }
 
-.contact-us h3 {
-	color:#00c1d7;
-	font-size:1.3em;
-	text-align:center;
-	margin-bottom:20px;
+.part2{
+	height:37vh;
 }
 
-.contact-us p {
-	text-align: center;
+.part3{
+	height:50vh;
 }
-
-footer .separater{
-	background-color:#F5F5F5;
-	padding:0.1vh;
-	width:30%;
-	position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top:10px;
-    margin-bottom:5px;
-}
-
-.copyright {
-	text-align:center;
-	margin-bottom:20px;
-}
-/* FOOTER ENDS */

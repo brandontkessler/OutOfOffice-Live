@@ -14,53 +14,33 @@
 
 </head>
 <body>
+  <div class="part1">
+    <h1 class="header">OutOfOffice Live</h1>
+  </div>
 
-<!-- HEADER -->
-<h1 class="header">OutOfOffice Live</h1>
-<!-- YOUTUBE EMBED -->
 
-<div class="youtube-embed">
-<iframe width="1000" height="562.5" src="https://www.youtube.com/embed/live_stream?channel=UC02ngzJV4rJzXwFvdzilRTA&autoplay=1" frameborder="0" gesture="media" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-<!-- YOUTUBE EMBED ENDS -->
+  <div class="part2">
+    <div class="youtube-embed">
+      <iframe width="1000" height="562.5" src="https://www.youtube.com/embed/live_stream?channel=UC02ngzJV4rJzXwFvdzilRTA&autoplay=1" frameborder="0" gesture="media" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
 
-<!-- END OF HEADER -->
+  <div class="part3">
+    <div class="chat__main">
+      <ol id="messages" class="chat__messages"></ol>
+      <div class="chat__footer">
+        <form id="message-form">
+          <input name="message" type="text" placeholder="type here" autofocus autocomplete="off" />
+          <button>Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
-<hr>
-<br>
 
-<!-- FOOTER STARTS HERE -->
-<footer>
-	<div class="footer-container">
-	    <div class="footer1">
-	    	<a href="www.outofoffice-app.com"><img src="../images/logo.png" alt="" class="logo"></a>
-	    	<br>
-	    	<a href="https://itunes.apple.com/us/app/out-of-office/id1261300665?mt=8"><img class="download-footer" src="../images/download-footer.png"></a>
-	    </div>
-	    <div class="footer2">
-	      <ul>
-	        <li><a href="https://outofoffice-app.com/privacy-policy/">Privacy Policy</a></li>
-	        <li><a href="https://outofoffice-app.com/terms-and-conditions/">Terms and Conditions</a></li>
-	        <li><a href="https://medium.com/@OutOfOfficeTeam">Blog</a></li>
-	        <li><a href="https://www.facebook.com/OutOfOfficeapp/?ref=settings"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company/18149468/"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></li>
-	      </ul>
-	    </div>
-	    <div class="footer3">
-	      <div class="contact-us">
-	        <h3>Contact Us</h3>
-	        <p>email: info@fullcirclediscoveries.com</p>
-
-	      </div>
-	    </div>
-	</div>
-	<div class="separater"></div>
-	<div class="copyright">
-	  <p>&copy; 2017 Full Circle Discoveries, LLC</p>
-	</div>
-
-</footer>
-  <!-- FOOTER ENDS HERE -->
 <script src="/socket.io/socket.io.js"></script>
+<script src="/js/libs/jquery-3.3.1.min.js"></script>
+<script src="/js/index.js"></script>
 
 </body>
 </html>
