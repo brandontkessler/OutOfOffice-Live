@@ -40,11 +40,9 @@ io.on('connection', (socket) => {
   });
 
   socket.on('disconnect', (socket) => {
-    var user = users.removeUser(socket.id);
+    users.removeUser(socket.id);
+    io.emit('updateUserList', users.getUserList());
 
-    if(user) {
-      io.emit('updateUserList', users.getUserList());
-    }
   })
 })
 

@@ -7,22 +7,21 @@ class Users {
     this.users.push(user);
     return user;
   }
-  getUser(id) {
-    return this.users.filter((user) => user.id === id)[0];
-  }
   removeUser(id) {
-    var user = this.users.filter((user) => user.id === id)[0];
+    var user = this.getUser(id);
 
     if (user) {
       this.users = this.users.filter((user) => user.id !== id);
     }
     return user;
   }
+  getUser(id) {
+    return this.users.filter((user) => user.id === id)[0];
+  }
   getUserList () {
-    return this.users;
+    var namesArray = this.users.map((user) => user.name); // converts object to string - of name only, instead of object with id and name properties
+    return namesArray;
   }
 }
 
-module.exports = {
-  Users
-};
+module.exports = {Users};
