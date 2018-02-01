@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/video.css">
 
 </head>
 <body>
@@ -22,14 +23,20 @@
   <div class="part2">
     <div class="youtube-embed">
       <!-- <iframe width="1000" height="562.5" src="https://www.youtube.com/embed/live_stream?channel=UC02ngzJV4rJzXwFvdzilRTA&autoplay=1" frameborder="0" gesture="media" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-			<iframe
+		<!--	<iframe
 			    src="https://player.twitch.tv/?channel=outofoffice_app"
 			    height="562.5"
 			    width="1000"
 			    frameborder="0"
 					scrolling="no"
 					allowfullscreen="false">
-			</iframe>
+			</iframe> -->
+			<div class="booth">
+			      <video id="video" autoplay width="400" height="300">
+
+			      </video>
+	    </div>
+
     </div>
     <hr>
   </div>
@@ -63,6 +70,7 @@
 <script src="/js/libs/mustache.js"></script>
 <script src="/js/libs/deparam.js"></script>
 <script src="/js/live.js"></script>
+<script src="/js/video.js"></script>
 
 </body>
 </html>
