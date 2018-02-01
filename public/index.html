@@ -23,6 +23,7 @@
     <div class="youtube-embed">
       <iframe width="1000" height="562.5" src="https://www.youtube.com/embed/live_stream?channel=UC02ngzJV4rJzXwFvdzilRTA&autoplay=1" frameborder="0" gesture="media" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
+    <hr>
   </div>
 
   <div class="part3">
@@ -37,9 +38,20 @@
     </div>
   </div>
 
+<script id="message-template" type="text/template">
+  <li class="message">
+    <div class="message__title">
+      <h4>{{from}}</h4>
+    </div>
+    <div class="message__body">
+      <p>{{text}}</p>
+    </div>
+  </li>
+</script>
 
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/libs/jquery-3.3.1.min.js"></script>
+<script src="/js/libs/mustache.js"></script>
 <script src="/js/index.js"></script>
 
 </body>

@@ -80,7 +80,12 @@ button:hover {
 }
 
 .message {
-	padding: 10px;
+	padding: 5px;
+}
+
+.message__body {
+	font-size: .8rem;
+	color:black;
 }
 
 .part1 {
